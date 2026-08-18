@@ -6,21 +6,21 @@
 # Por convenção, usamos PascalCase para nomes de
 # classe
 
-class Pessoa: # Classe
-    def __init__(self, nome, sobrenome):
-        self.nome = nome
-        self.sobrenome = sobrenome
+class Pessoa:
+    def __init__(self, nome, sobrenome):     # Na class usasse o 'def' para definir métodos, tipo como se fosse uma função
+        self.nome = nome                     # O 'self' retorna o objeto da classe
+        self.sobrenome = sobrenome          
 
-p1 = Pessoa('Lucas', 'Mattos') # Objeto 1
-# p1.nome = 'Lucas' # Atributo 1
-# p1.sobrenome = 'Mattos' # Atributo 2
+p1 = Pessoa('Lucas', 'Mattos')
+print(p1.nome, p1.sobrenome)
 
-p2 = Pessoa('Wesley', 'Gomes') # Objeto 2
-# p2.nome = 'Larissa' # Atributo 1
-# p2.sobrenome = 'Cordeiro' # Atributo 2
+p2 = Pessoa('Luiz', 'Otávio')
+print(p2.nome, p2.sobrenome)
 
-print(p1.nome)
-print(p1.sobrenome)
 
-print(p2.nome)
-print(p2.sobrenome)
+'''
+A classe é como se fosse o molde, o molde gera objetos;
+Cada objeto tem um self que retorna ele dentro da classe;
+O __init__ é um dos primeiros métodos a ser chamado numa 
+classe para inicialiar os atributos da classe.
+'''

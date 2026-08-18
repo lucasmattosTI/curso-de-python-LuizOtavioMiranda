@@ -1,18 +1,14 @@
 [
   {
-    "nome": "Lucas",
-    "idade": 25
-  },
-  {
-    "nome": "Henrique",
+    "nome": "João Pedro",
     "idade": 15
-  },
-  {
-    "nome": "João",
-    "idade": 18
   },
   {
     "nome": "Larissa",
     "idade": 18
+  },
+  {
+    "nome": "Lucas",
+    "idade": 25
   }
 ]

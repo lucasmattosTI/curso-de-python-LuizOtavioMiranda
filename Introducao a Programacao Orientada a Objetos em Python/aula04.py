@@ -3,7 +3,7 @@
 # Instância da class (objeto) - Tem os dados
 # Uma classe pode gerar várias instâncias.
 # Na classe o self é a própria instância.
-
+ 
 class Carro:
     def __init__(self, nome):
         self.nome = nome
@@ -11,12 +11,9 @@ class Carro:
     def acelerar(self):
         print(f'{self.nome} está acelerando...')
 
-fusca = Carro('Fuca')
-# print(fusca.nome)
-fusca.acelerar()
+fusca = Carro('fusca')
+# fusca.acelerar()
 Carro.acelerar(fusca)
 
 celta = Carro('Celta')
-# print(celta.nome)
-celta.acelerar()
-Carro.acelerar(celta)
+Carro.acelerar(celta) #-> é a mesma coisa que eu fazer: celta.acelerar()

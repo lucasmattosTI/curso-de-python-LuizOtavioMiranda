@@ -10,18 +10,16 @@
 #print(isinstance(string, str))
 
 class Pessoa: # Classe
-    ... 
+    ...
+    # dados dentro de uma classe são atributos
+    # ações (funções) dentro de uma classe são métodos
 
-p1 = Pessoa() # Objeto 1
-p1.nome = 'Lucas' # Atributo 1
-p1.sobrenome = 'Mattos' # Atributo 2
+p1 = Pessoa() # Instância da classe ou objeto
+p1.nome = 'Lucas' # atributos
+p1.sobrenome = 'Mattos' # atributos
+print(p1.nome, p1.sobrenome)
 
-p2 = Pessoa() # Objeto 2
-p2.nome = 'Larissa' # Atributo 1
-p2.sobrenome = 'Cordeiro' # Atributo 2  '
-
-print(p1.nome)
-print(p1.sobrenome)
-
-print(p2.nome)
-print(p2.sobrenome)
+p2 = Pessoa() # Nova instância da classe ou um novo objeto
+p2.nome = 'Larissa'
+p2.sobrenome = 'Cordeiro'
+print(p2.nome, p2.sobrenome)

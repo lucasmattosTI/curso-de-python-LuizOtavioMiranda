@@ -12,11 +12,12 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-p1 = Pessoa('Lucas', 25)
-p2 = Pessoa('Henrique', 15)
-p3 = Pessoa('João', 18)
-p4 = Pessoa('Larissa', 18)
-bd = [vars(p1), vars(p2), vars(p3), vars(p4)]
+p1 = Pessoa('João Pedro', 15)
+p2 = Pessoa('Larissa', 18)
+p3 = Pessoa('Lucas', 25)
+
+bd = [vars(p1), vars(p2), vars(p3)]
 
 with open(CAMINHO_ARQUIVO, 'w', encoding= 'utf-8') as arquivo:
-    json.dump(bd, arquivo, ensure_ascii=False, indent=2)
+    print('FAZENDO DUMP')
+    json.dump(bd, arquivo, ensure_ascii= False, indent = 2)

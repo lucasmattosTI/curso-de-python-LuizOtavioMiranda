@@ -2,16 +2,16 @@
 # Hard coded - É algo que foi escrito diretamente no código
 
 class Carro:
-    def __init__(self, nome):
+    def __init__(self, nome): # self = 'Eu mesmo!' instância da classe
         self.nome = nome
 
     def acelerar(self):
-        print(f'{self.nome} está acelerando...')
+        print(f'O {self.nome} está acelerando...')
 
-fusca = Carro('Fuca')
+fusca = Carro('Fusca')
 print(fusca.nome)
 fusca.acelerar()
 
-celta = Carro('Celta')
+celta = Carro(nome = 'Celta')
 print(celta.nome)
 celta.acelerar()

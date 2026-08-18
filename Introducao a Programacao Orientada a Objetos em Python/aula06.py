@@ -9,41 +9,31 @@ class Camera:
         if self.filmando:
             print(f'{self.nome} já está filmando...')
             return
-        
-        self.filmando = True
+
         print(f'{self.nome} está filmando...')
-
-    def para_filmar(self):
-        if not self.filmando:
-            print(f'{self.nome} não está filmando...')
-            return
-
-        print(f'{self.nome} está parando de filmar...')
-        self.filmando = False
+        self.filmando = True
 
     def fotografar(self):
         if self.filmando:
-            print(f'{self.nome} não pode fotografar filmando')
+            print(f'{self.nome} não pode fotografar')
             return
-
         print(f'{self.nome} está fotografando...')
 
-    
+    def parar_filmar(self):
+        if not self.filmando:
+            print(f'{self.nome} não está filmando!')
+            return
+        print(f'{self.nome} está parando de filmar.')
+        self.filmando = False
 
-c1 = Camera('Canon')
+c1 = Camera('Cannon')
 c2 = Camera('Sony')
-c1.filmar()
-c1.filmar()
-c1.fotografar()
-c1.para_filmar()
-c1.fotografar()
+print(c2.nome)
+print(c2.filmando)
 
-print()
-
-c2.para_filmar()
 c2.filmar()
+print(c2.filmando)
 c2.filmar()
 c2.fotografar()
-c2.para_filmar()
-c2.fotografar()
+c2.parar_filmar()
 c2.fotografar()
