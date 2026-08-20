@@ -21,19 +21,18 @@ class Escritor:
     def ferramenta(self, ferramenta):
         self._ferramenta = ferramenta
 
-
-class FerramentaDeEscrever:
+class FerramentaDeEscrecer:
     def __init__(self, nome):
         self.nome = nome
 
     def escrever(self):
-        return f'{self.nome} está escrevendo.'
+        return f'{self.nome} está escrevendo'
 
 escritor = Escritor('Lucas')
-caneta = FerramentaDeEscrever('Caneta BIC')
-maquina_de_escrever = FerramentaDeEscrever('Máquina')
-escritor.ferramenta = maquina_de_escrever
+caneta = FerramentaDeEscrecer('Caneta BIC')
+lapis = FerramentaDeEscrecer('Lapis')
+escritor.ferramenta = lapis # O macete tá aqui -> ferramenta é igual ao método FerramentaDeEscrever
+
 
 print(caneta.escrever())
-print(maquina_de_escrever.escrever())
 print(escritor.ferramenta.escrever())
